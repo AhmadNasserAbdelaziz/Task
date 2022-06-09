@@ -121,6 +121,7 @@ margin: 20vh;
 
 }
 
+
 .title {
   display: flex;
   margin-bottom: 5vh;
@@ -215,6 +216,7 @@ margin: 20vh;
 .desc{
 
   overflow-y: visible; 
+  margin-top: 3vh;
 }
 
 

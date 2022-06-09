@@ -1,6 +1,7 @@
 {
   "type": "module",
   "dependencies": {
+    "cypress": "^10.0.3",
     "firebase": "^9.6.11"
   }
 }
