@@ -1,14 +1,13 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyBP2qImxxv5y9R7026K7shz44-tgHcQvEI",
-    authDomain: "notesapptask-48f42.firebaseapp.com",
-    databaseURL: "https://notesapptask-48f42-default-rtdb.europe-west1.firebasedatabase.app",
-    projectId: "notesapptask-48f42",
-    storageBucket: "notesapptask-48f42.appspot.com",
-    messagingSenderId: "635778090412",
-    appId: "1:635778090412:web:5a043b2dac0ff1bb3c6609",
-    measurementId: "G-NKPZ6QJHKF"
-  };
-
+  apiKey: "AIzaSyBwwrOF9CAxZVgS_gyg1DoGVraMBJ5LcxU",
+  authDomain: "notesapp-9d7ec.firebaseapp.com",
+  databaseURL: "https://notesapp-9d7ec-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "notesapp-9d7ec",
+  storageBucket: "notesapp-9d7ec.appspot.com",
+  messagingSenderId: "150499457124",
+  appId: "1:150499457124:web:40ab65cda6c785beb64771",
+  measurementId: "G-VE6PEBEYPV"
+};
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   const auth = firebase.auth();
