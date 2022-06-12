@@ -25,6 +25,10 @@ function submitForm(e){
   var dateString = new Date().toLocaleString();
   var date = dateString.slice(0,15) + ' ' + dateString.slice(19,21);
 
+  if(title.length < 10 || description.length < 10){
+    alert('Please fill in all fields');
+    return false;
+  }
 
   var database_ref = notesDB.ref();
   

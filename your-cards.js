@@ -20,7 +20,8 @@ function getdata()
     var data = snapshot.val();
         for (let i in data )
     {
-       container += `<div class="note">
+      console.log(data[i]);
+       container += `<div id=${data[i].date} class="note">
        <div class="text">
          <p class="title-note">${data[i].title}</p>
          <p class="desc">${data[i].description}</p>

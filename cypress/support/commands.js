@@ -23,3 +23,15 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('CheckNewCardPage', () => {
+    cy.visit("/new-card.html");
+  it("Should be on New Card Page ", () => {
+    cy.location().should((location) => {
+      expect(location.protocol).to.eq("http:");
+    });
+    cy.url().should("include", "/new-card.html");
+
+    cy.title().should("eq", "Notes");
+  });
+})
