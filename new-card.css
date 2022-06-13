@@ -1,126 +1,113 @@
 html {
   min-height: 100;
   border: 10px;
-
 }
 
 nav {
-    position: relative;
-    background-color: black;
-    height: 14vh;
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  nav video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-  }
-  
-  nav .container {
-    position: relative;
-    z-index: 2;
-  }
-  
-  nav .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    opacity: 0.5;
-    z-index: 1;
-  }  
-  @media (pointer: coarse) and (hover: none) {
-    nav {
-      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
-    }
-  
-    nav video {
-      display: none;
-    }
-  }
-
-
-  .main-content {
-    display: flex;
-    border: 2px solid;
-    border-color: #b8c6db;
-
-  }
-
-  .side-bar {
-    width: 10%;
-    min-width: 10% !important;
-    background-color: #b8c6db;
-    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%); 
-    border-right: 2px solid;
-    border-color: #b8c6db;
-    
-   }
-
-
-  .upper-side-bar {
-    height: 20vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 2px solid;
-    border-color: #b8c6db;
-
-  }
-
-  .new-card-btn {
-  
-    background-color: #f1f1f1;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 20px;
-    cursor: pointer;
-  }
-
-
-  .lower-side-bar {
-    height: 65vh;
-    display: flex;
-    justify-content: center;
-  }
-
-  .your-cards-btn {
-  
-    background-color: #f1f1f1;
-    height: fit-content;
-    margin-top: 8vh;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 20px;
-    cursor: pointer;
-  }
-
-
-
-
- .new-card{
-   width: 80%;
- }
- .content-form {
-display: grid;
-justify-content: center;
-margin: 20vh;
-
+  position: relative;
+  background-color: black;
+  height: 14vh;
+  width: 100%;
+  overflow: hidden;
 }
 
+nav video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+nav .container {
+  position: relative;
+  z-index: 2;
+}
+
+nav .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+@media (pointer: coarse) and (hover: none) {
+  nav {
+    background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black
+      no-repeat center center scroll;
+  }
+
+  nav video {
+    display: none;
+  }
+}
+
+.main-content {
+  display: flex;
+  border: 2px solid;
+  border-color: #b8c6db;
+}
+
+.side-bar {
+  width: 10%;
+  min-width: 10% !important;
+  background-color: #b8c6db;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+  border-right: 2px solid;
+  border-color: #b8c6db;
+}
+
+.upper-side-bar {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid;
+  border-color: #b8c6db;
+}
+
+.new-card-btn {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.lower-side-bar {
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+}
+
+.your-cards-btn {
+  background-color: #f1f1f1;
+  height: fit-content;
+  margin-top: 8vh;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.new-card {
+  width: 80%;
+}
+.content-form {
+  display: grid;
+  justify-content: center;
+  margin: 20vh;
+}
 
 .title {
   display: flex;
@@ -129,7 +116,7 @@ margin: 20vh;
 }
 
 .title > input {
-  width: 50vh ;
+  width: 50vh;
 }
 
 .description {
@@ -143,19 +130,16 @@ margin: 20vh;
   width: 50vh;
 }
 
-.sv-btn{
+.sv-btn {
   align-items: center;
-    display: flex;
-    justify-content: space-around;
-
-  
+  display: flex;
+  justify-content: space-around;
 }
 .save-btn {
   width: 10vw;
 }
 
 /* -------------------CARDS CSS--------------------------------------- */
-
 
 .your-cards {
   display: flex;
@@ -171,26 +155,25 @@ margin: 20vh;
   grid-template-columns: 1fr 1fr 1fr;
   margin-left: 10vw;
 }
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap");
 .note {
-  font-family: 'Comfortaa', cursive;
-	float: left;
-	display: flex;
-	position: relative;
-	padding: 1em;
-	width: 20vw;
+  font-family: "Comfortaa", cursive;
+  float: left;
+  display: flex;
+  position: relative;
+  padding: 1em;
+  width: 20vw;
   height: 20vw;
   overflow-y: visible;
-	min-height: inherit;
+  min-height: inherit;
   overflow: auto;
   margin: 0 30px 30px 0;
-	background-color: #FFFD75;
-	box-shadow: 5px 5px 10px -2px rgba(33,33,33,.3);
-	transform: rotate(2deg);
-	transform: skew(-1deg,1deg);
-	transition: transform .15s;
-	z-index: 1;
-
+  background-color: #fffd75;
+  box-shadow: 5px 5px 10px -2px rgba(33, 33, 33, 0.3);
+  transform: rotate(2deg);
+  transform: skew(-1deg, 1deg);
+  transition: transform 0.15s;
+  z-index: 1;
 }
 
 .note::-webkit-scrollbar {
@@ -206,50 +189,53 @@ margin: 20vh;
   background: #555;
 }
 
-
 .title-note {
   font-size: medium;
   font-weight: 600;
 }
 
-
-.desc{
-
-  overflow-y: visible; 
+.desc {
+  overflow-y: visible;
   margin-top: 3vh;
 }
 
-
-
-.delete{
+.delete {
   width: 2vw;
   height: 4vh;
   border: none;
   margin-top: 1px;
   margin-right: 2px;
-  position:absolute;
-  top:1vh;
-  right:1vw;
-  background: url('delete.png');
+  position: absolute;
+  top: 1vh;
+  right: 1vw;
+  background: url("delete.png");
   background-size: 100%;
-  background-repeat:no-repeat;
-  
+  background-repeat: no-repeat;
 }
 
 .delete:active {
   transform: translateY(4px);
 }
 
-.date{
+.date {
   width: 6.5vw;
   height: 2vh;
   border: none;
-  position:absolute;
-  top:5.5vh;
-  left:1vw;
+  position: absolute;
+  bottom: 5.5vh;
+  left: 1vw;
   background-size: 100%;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   font-size: x-small;
   margin-bottom: 0;
-  
+}
+
+.title-error {
+  margin-top: 5px;
+  color: red;
+}
+
+.desc-error {
+  margin-top: 5px;
+  color: red;
 }

@@ -26,9 +26,27 @@ function submitForm(e){
   var date = dateString.slice(0,15) + ' ' + dateString.slice(19,21);
 
   if(title.length < 10 || description.length < 10){
-    alert('Please fill in all fields');
-    return false;
+    if (title.length < 10) {
+  document.getElementsByClassName('title-error')[0].hidden = false;  
+  document.getElementById('titleInput').style.borderColor = 'red';
+  document.getElementById('titleInput').value = '';
+
+    }else {
+      document.getElementsByClassName('title-error')[0].hidden = true;
+    }
+  if(description.length < 10) {
+  document.getElementsByClassName('desc-error')[0].hidden = false;
+  document.getElementById('descriptionInput').style.borderColor = 'red';
+  document.getElementById('descriptionInput').value = '';
+
+  } else {
+    document.getElementsByClassName('desc-error')[0].hidden = true;
   }
+    return null ;
+  }
+
+
+ 
 
   var database_ref = notesDB.ref();
   

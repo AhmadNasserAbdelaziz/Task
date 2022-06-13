@@ -18,7 +18,7 @@
 <nav class="welcome">
 
 
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <video id="welcomeVideo" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
       <source src="welcome-video.mp4" type="video/mp4">
     </video>
     <div class="container h-100">
@@ -56,12 +56,19 @@
   
     <div class="title"> 
     <label>Title</label>
-    <input type="text" id="titleInput" placeholder="" required minlength="10">
+    <input type="text" id="titleInput" placeholder="" >
+    </div>
+    <div class ="title-error" hidden>
+    <p id="title-error"> Title cannot be less than 10 charchaters </p>
     </div>
     <div class="description">
     <label>Description</label>
-    <textarea id="descriptionInput" placeholder=""  required minlength="10"></textarea>
+    <textarea id="descriptionInput" placeholder=""  ></textarea>  
+  </div>
+  <div class ="desc-error" hidden>
+    <p id="desc-error"> Description cannot be less than 10 charchaters </p>
     </div>
+
     <div class="sv-btn">
     <button id="submit" type="submit" class="save-btn">Save</button>
 </div>
