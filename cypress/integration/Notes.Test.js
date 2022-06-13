@@ -18,7 +18,7 @@ context("Locate 'New Card' Page Elements", () => {
     cy.get(".side-bar").find(".new-card-btn").should("contain", "New Card");
     cy.get(".side-bar").find(".your-cards-btn").should("contain", "Your Cards");
   });
-  it("Page should contain a Conten form", () => {
+  it("Page should contain a Content form", () => {
     cy.get(".content-form").should("exist");
   });
 
@@ -57,7 +57,7 @@ context("Test 'New Card' page input Validations", () => {
     cy.get(".desc-error").should("have.css", "display", "block");
     cy.get("form").clear();
   });
-  it("If all validations are valid, erros should`nt appper and redirect to your cards page", () => {
+  it("If all validations are valid, errors should`nt appear and redirect to your cards page", () => {
     cy.get("#titleInput").click();
     cy.get("#titleInput").type("Title Validation is True");
     cy.get("#descriptionInput").click();
