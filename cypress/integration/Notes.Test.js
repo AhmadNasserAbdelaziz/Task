@@ -88,7 +88,7 @@ context("Locate 'Your Cards' Page Elements", () => {
     cy.get(".side-bar").find(".new-card-btn").should("contain", "New Card");
     cy.get(".side-bar").find(".your-cards-btn").should("contain", "Your Cards");
   });
-  it("Page should a Your Cards div with a board ", () => {
+  it("Page should have a 'Your Cards' div with a 'board inside it ", () => {
     cy.get(".your-cards").find(".board").should("exist");
   });
 
